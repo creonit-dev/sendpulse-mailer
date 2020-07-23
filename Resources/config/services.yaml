@@ -1,0 +1,6 @@
+services:
+  creonit.mailer.transport_factory.sendpulse:
+    class: Creonit\SendPulseMailer\Transport\SendPulseTransportFactory
+    parent: mailer.transport_factory.abstract
+    tags:
+      - mailer.transport_factory
